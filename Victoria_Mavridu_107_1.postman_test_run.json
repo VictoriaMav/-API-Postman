@@ -1,0 +1,398 @@
+{
+	"id": "857a08b0-decb-4222-be7c-5cc423a81104",
+	"name": "Victoria_Mavridu_107_1",
+	"timestamp": "2023-05-01T11:09:07.838Z",
+	"collection_id": "27039528-5a622969-689e-4f82-b2d9-0628e3c41dd3",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 18,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-05-01T11:08:59.770Z",
+	"totalFail": 3,
+	"results": [
+		{
+			"id": "089f0226-161c-4d76-ba60-04152585e4c5",
+			"name": "Create a new user (positive)",
+			"url": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+			"time": 1794,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 1800ms": true,
+				"Set id": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1800ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Set id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1794
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 1800ms": true,
+					"Set id": true
+				}
+			]
+		},
+		{
+			"id": "2c574880-fd29-428d-8a08-26c358b58724",
+			"name": "Create a new user (negative)",
+			"url": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+			"time": 1242,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response time is less than 1800ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 1800ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1242
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response time is less than 1800ms": true
+				}
+			]
+		},
+		{
+			"id": "6d10712a-10d2-45db-8c7e-d8eb1778fee3",
+			"name": "Get the user (positive)",
+			"url": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=e5d59add-25d7-4f6c-988f-ce132c80bd6a",
+			"time": 561,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 600ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 600ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				561
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 600ms": true
+				}
+			]
+		},
+		{
+			"id": "2763f386-f8ac-4af4-994c-820547356402",
+			"name": "Get the user (negative)",
+			"url": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=6fd62f7c-0f59-4a9d-844a-7fa0772f",
+			"time": 522,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 400": false,
+				"Response time is less than 600ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 600ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				522
+			],
+			"allTests": [
+				{
+					"Status code is 400": false,
+					"Response time is less than 600ms": true
+				}
+			]
+		},
+		{
+			"id": "691f811c-0a7c-4f28-948b-e842d07f60e9",
+			"name": "Change the user data (positive)",
+			"url": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+			"time": 435,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 600ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 600ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				435
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 600ms": true
+				}
+			]
+		},
+		{
+			"id": "90e8fa09-52b2-40d9-b90e-6f0f96fcb818",
+			"name": "Change the user data (negative)",
+			"url": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+			"time": 397,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 400": false,
+				"Response time is less than 600ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 600ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				397
+			],
+			"allTests": [
+				{
+					"Status code is 400": false,
+					"Response time is less than 600ms": true
+				}
+			]
+		},
+		{
+			"id": "27b76d91-98f6-4299-8b7a-384fc113dae9",
+			"name": "Change the user (positive))",
+			"url": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+			"time": 382,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 700ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 700ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				382
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 700ms": true
+				}
+			]
+		},
+		{
+			"id": "3bf0ca34-5cba-4bc5-b48c-540b02512ed1",
+			"name": "Change the user (negative)",
+			"url": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+			"time": 208,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 400": false,
+				"Response time is less than 700ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 700ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				208
+			],
+			"allTests": [
+				{
+					"Status code is 400": false,
+					"Response time is less than 700ms": true
+				}
+			]
+		},
+		{
+			"id": "ff75191e-c9cb-4184-9d21-0993f3d82d63",
+			"name": "Delete the user (positive)",
+			"url": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=e5d59add-25d7-4f6c-988f-ce132c80bd6a",
+			"time": 437,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 800ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 800ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				437
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 800ms": true
+				}
+			]
+		},
+		{
+			"id": "0348bfd2-60ed-415a-9492-41aaf0cb63a1",
+			"name": "Delete the user (negative)",
+			"url": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=6fd62f7c-0f59-4a9d-844a-7fa8772f4567",
+			"time": 403,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 800ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 800ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				403
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 800ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 6381,
+	"collection": {
+		"requests": [
+			{
+				"id": "089f0226-161c-4d76-ba60-04152585e4c5",
+				"method": "POST"
+			},
+			{
+				"id": "2c574880-fd29-428d-8a08-26c358b58724",
+				"method": "POST"
+			},
+			{
+				"id": "6d10712a-10d2-45db-8c7e-d8eb1778fee3",
+				"method": "GET"
+			},
+			{
+				"id": "2763f386-f8ac-4af4-994c-820547356402",
+				"method": "GET"
+			},
+			{
+				"id": "691f811c-0a7c-4f28-948b-e842d07f60e9",
+				"method": "PATCH"
+			},
+			{
+				"id": "90e8fa09-52b2-40d9-b90e-6f0f96fcb818",
+				"method": "PATCH"
+			},
+			{
+				"id": "27b76d91-98f6-4299-8b7a-384fc113dae9",
+				"method": "PUT"
+			},
+			{
+				"id": "3bf0ca34-5cba-4bc5-b48c-540b02512ed1",
+				"method": "PUT"
+			},
+			{
+				"id": "ff75191e-c9cb-4184-9d21-0993f3d82d63",
+				"method": "DELETE"
+			},
+			{
+				"id": "0348bfd2-60ed-415a-9492-41aaf0cb63a1",
+				"method": "DELETE"
+			}
+		]
+	}
+}
